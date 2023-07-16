@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Example</title>
+
+<style>
+
+.container{
+
+display: flex;
+gap: 10px;
+margin: 5px;
+
+}
+
+
+.box{
+
+background-color: cadetblue;
+padding: 20px;
+border-radius: 20px;
+
+}
+
+.item{
+
+width: 200px;
+height: 100px;
+padding: 10px;
+font-weight: bold;
+background-color: aqua;
+border: 3px solid tomato;
+
+}
+
+.container-2{
+
+display: flex;
+flex-wrap: wrap;
+margin: 5px;
+
+
+}
+
+@media screen and (max-width:576px){
+    
+.container{
+
+flex-direction: column;
+
+}
+
+.item{
+
+align-items: center;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+<h2>Flexible Flex</h2>
+
+<div class="container">
+
+<div class="box">
+
+<h3>First Box</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non saepe nihil quas cum dignissimos illum cumque possimus laboriosam distinctio debitis?</p>
+
+
+</div>
+<div class="box">
+
+<h3>Second Box</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non saepe nihil quas cum dignissimos illum cumque possimus laboriosam distinctio debitis?</p>
+
+</div>
+
+</div>
+
+<!-- .item{item-$}*10 -->
+
+<div class="container-2">
+
+<div class="item">item-1</div>
+<div class="item">item-2</div>
+<div class="item">item-3</div>
+<div class="item">item-4</div>
+<div class="item">item-5</div>
+<div class="item">item-6</div>
+<div class="item">item-7</div>
+<div class="item">item-8</div>
+<div class="item">item-9</div>
+<div class="item">item-10</div>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
